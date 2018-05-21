@@ -13,4 +13,12 @@ for purchase in purchases:
   for key, name in stockDict.items():
     if purchase[0] == key:
       price = purchase[1]*purchase[3]
-      print(name + " {0} date:{1}".format(price,purchase[3]))
+      print("purchase history report " + name + " {0} date:{1}".format(price,purchase[2]))
+
+## total investment by ticker symbol
+
+for purchase in purchases:
+  for key, name in stockDict.items():
+    if purchase[0] == key:
+      price = purchase[1]*purchase[3]
+      print(key + " {0}".format(price))
