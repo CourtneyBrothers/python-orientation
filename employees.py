@@ -34,4 +34,13 @@ go_co = Company("Go Company","2018")
 
 go_co.add_employees([emp1,emp2,emp3])
 
-print(go_co)
+print(go_co) # instance
+
+
+# comprehension 
+print([emp.name +  "works here" for emp in go_co.employees])
+
+# vars opens up instance gives object iterable values 
+print([vars(emp) for emp in go_co.employees])
+
+# term for making instances is subclassing 
